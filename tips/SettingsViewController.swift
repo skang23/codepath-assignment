@@ -14,6 +14,7 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var firstP: UITextField!
     @IBOutlet weak var secondP: UITextField!
     @IBOutlet weak var thirdP: UITextField!
+    @IBOutlet weak var defaultControl: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -39,9 +40,15 @@ class SettingsViewController: UIViewController {
         let first=Int(firstP.text!)
         let second=Int(secondP.text!)
         let third=Int(thirdP.text!)
+        let defaultTip=defaultControl.selectedSegmentIndex;
         defaults.setInteger(first!,forKey:"first")
         defaults.setInteger(second!,forKey:"second")
         defaults.setInteger(third!,forKey:"third")
+        defaults.setInteger(defaultTip,forKey:"default")
+        
+    }
+    @IBAction func onTap(sender: AnyObject) {
+        view.endEditing(true);
     }
     /*
     // MARK: - Navigation

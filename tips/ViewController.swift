@@ -14,12 +14,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var tipControl: UISegmentedControl!
     override func viewWillAppear(animated: Bool) {
-        
+        billField.becomeFirstResponder()
+
         let defaults = NSUserDefaults.standardUserDefaults()
         //  let tipValue = defaults.doubleForKey("default_tip_percentage")
         let check=defaults.integerForKey("first")
         if check != 0 {
-            print(check)
         }
         else{
             defaults.setInteger(18,forKey:"first")
@@ -28,21 +28,24 @@ class ViewController: UIViewController {
             //defaults.synchronize()
         }
         let first=defaults.integerForKey("first").description
-        print(defaults.integerForKey("first"))
         let second=defaults.integerForKey("second").description
         let third=defaults.integerForKey("third").description
         tipControl.setTitle(String(format:"%%%@",first), forSegmentAtIndex: 0)
         tipControl.setTitle(String(format:"%%%@",second),forSegmentAtIndex: 1)
         tipControl.setTitle(String(format:"%%%@",third), forSegmentAtIndex: 2)
-
+        let defaultPercentage=defaults.integerForKey("default")
         
+        tipControl.setEnabled(true, forSegmentAtIndex: defaultPercentage)
+        tipControl.selectedSegmentIndex=defaultPercentage
+        onEditingChanged(self)
+
     }
     override func viewDidLoad() {
+        billField.becomeFirstResponder()
         let defaults = NSUserDefaults.standardUserDefaults()
       //  let tipValue = defaults.doubleForKey("default_tip_percentage")
         let check=defaults.integerForKey("first")
         if check != 0 {
-            print(check)
         }
         else{
             defaults.setInteger(18,forKey:"first")
