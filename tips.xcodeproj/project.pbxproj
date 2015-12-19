@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		475EB7A11C254B5D0072795B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475EB7A01C254B5D0072795B /* SettingsViewController.swift */; };
 		47C94B751C24D086006ED91B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C94B741C24D086006ED91B /* AppDelegate.swift */; };
 		47C94B771C24D086006ED91B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C94B761C24D086006ED91B /* ViewController.swift */; };
 		47C94B7A1C24D086006ED91B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47C94B781C24D086006ED91B /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		475EB7A01C254B5D0072795B /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		47C94B711C24D086006ED91B /* tips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47C94B741C24D086006ED91B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47C94B761C24D086006ED91B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				47C94B7B1C24D086006ED91B /* Assets.xcassets */,
 				47C94B7D1C24D086006ED91B /* LaunchScreen.storyboard */,
 				47C94B801C24D086006ED91B /* Info.plist */,
+				475EB7A01C254B5D0072795B /* SettingsViewController.swift */,
 			);
 			path = tips;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			files = (
 				47C94B771C24D086006ED91B /* ViewController.swift in Sources */,
 				47C94B751C24D086006ED91B /* AppDelegate.swift in Sources */,
+				475EB7A11C254B5D0072795B /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +486,7 @@
 				47C94B9B1C24D087006ED91B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47C94B9C1C24D087006ED91B /* Build configuration list for PBXNativeTarget "tipsTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +495,7 @@
 				47C94B9E1C24D087006ED91B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47C94B9F1C24D087006ED91B /* Build configuration list for PBXNativeTarget "tipsUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +504,7 @@
 				47C94BA11C24D087006ED91B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
